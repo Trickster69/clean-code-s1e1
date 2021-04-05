@@ -6,12 +6,12 @@
 //Break things down into smaller steps and take each step at a time.
 
 
-// Event handling, user interaction is what starts the code execution.
+// Event handling, uadd-task-btnser interaction is what starts the code execution.
 
-var taskInput=document.getElementById("new-task");//Add a new task.
+var taskInput=document.getElementById("new-item__input");//Add a new task.
 var addButton=document.getElementsByTagName("button")[0];//first button
-var incompleteTaskHolder=document.getElementById("incomplete-tasks");//ul of #incomplete-tasks
-var completedTasksHolder=document.getElementById("completed-tasks");//completed-tasks
+var incompleteTaskHolder=document.querySelector(".incomplete-tasks");//ul of #incomplete-tasks
+var completedTasksHolder=document.querySelector(".completed-tasks");//completed-tasks
 
 
 //New task list item
@@ -31,15 +31,15 @@ var createNewTaskElement=function(taskString){
     //button.delete
     var deleteButton=document.createElement("button");//delete button
     var deleteButtonImg=document.createElement("img");//delete button image
-    deleteButtonImg.classList = 'btn-delete';
+    deleteButtonImg.classList = 'btn_delete';
     
     label.innerText=taskString;
-    label.className='task task-label';
+    label.className='task tasks-list__task-label';
 
     //Each elements, needs appending
     checkBox.type="checkbox";
     editInput.type="text";
-    editInput.className ="task-name"; 
+    editInput.className ="task_name"; 
 
     editButton.innerText="Edit"; //innerText encodes special characters, HTML does not.
     editButton.className="edit btn";

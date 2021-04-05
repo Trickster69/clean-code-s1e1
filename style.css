@@ -10,10 +10,10 @@
   display: block;
   text-align: right;
 }
-.logo {
+.header__logo {
   width: 100%;
 }
-.more_inf {
+.header__info {
   font-family: fantasy, cursive;
 }
 
@@ -22,7 +22,7 @@
     text-align: center;
   }
 }
-.main-page {
+.main {
   display: block;
   width: 400px;
   margin: 0 auto 0;
@@ -31,7 +31,7 @@
   width: 56%;
   display: inline-block;
 }
-.task-wrapper {
+.task_wrapper {
   margin:0;
   padding: 0px;
 }
@@ -56,7 +56,7 @@ button:hover {
   color: #3a3a3a;
 }
 /* Heading */
-.field-name {
+.task_status {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -65,7 +65,7 @@ button:hover {
   margin: 0;
   text-transform: uppercase;
 }
-.task-name {
+.task_name {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -77,74 +77,74 @@ button:hover {
   font-family: Lato, sans-serif;
   color: #888;
 }
-.task-name:focus {
+.task_name:focus {
   color: #333;
 }
 
 /* New Task */
-.add-task-field {
+.new-item__label {
   display: block;
   margin: 0 0 20px;  
 }
 .add-task {
   width: 315px;
 }
-.add-task-btn:hover {
+.new-item__btn:hover {
   color: #0fc57c;
 }
 
 /* Task list */
-.list {
+.tasks-list {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
 }
-.list > * {
+.tasks-list > * {
   vertical-align: middle;
 }
 
-.input-checkbox {
+.tasks-list__input-checkbox {
   margin: 0 10px;
 }
-.task-label {
+.tasks-list__task-label {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
   
 }
-.list > .task-name {
+.tasks-list > .task_name {
   width: 226px;  
 }
 .delete:hover {
   color: #cf2323;
 }
-.btn-delete {
+.btn_delete {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
-.btn .btn-delete:hover {
+.btn .btn_delete:hover {
   transform: rotateZ(0);
 }
 
 /* Completed */
-.task-wrapper#completed-tasks .task-label {
+.completed-tasks .task  {
   text-decoration: line-through;
   color: #888;
   
 }
 
 /* Edit Task */
-.task-wrapper .task-name {
+.task_wrapper .task_name {
   display: none;
 }
 
-.task-wrapper .edit-mode .task-name {
+.task_wrapper .edit-mode .task_name {
   display: inline-block;
   width: 217px;
 }
 
-.task-wrapper .edit-mode .task-label {
+.task_wrapper .edit-mode .tasks-list__task-label {
   display: none;
 }
