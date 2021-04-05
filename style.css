@@ -134,12 +134,12 @@ button:hover {
 
 /* Edit Task */
 .ul li .task-name {
-  display: none
+  display: none;
 }
 
 .ul li.edit-mode .task-name {
   display: inline-block;
-  width: 217px
+  width: 217px;
 }
 
 .ul li.edit-mode label {
