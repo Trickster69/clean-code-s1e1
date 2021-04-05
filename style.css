@@ -17,7 +17,7 @@
   font-family: fantasy, cursive;
 }
 
-@media (max-width:768px) {
+@media (max-width: 768px) {
   .header {
     text-align: center;
   }
@@ -36,10 +36,10 @@ ul {
   padding: 0px;
 }
 li, h3 {
-  list-style:none;
+  list-style: none;
 }
 input,button{
-  outline:none;
+  outline: none;
 }
 .btn {
   background: none;
@@ -134,14 +134,14 @@ button:hover {
 
 /* Edit Task */
 .ul li .task-name {
-  display:none
+  display: none
 }
 
 .ul li.edit-mode .task-name {
-  display:inline-block;
-  width:217px
+  display: inline-block;
+  width: 217px
 }
 
 .ul li.edit-mode label {
-  display:none;
+  display: none;
 }
